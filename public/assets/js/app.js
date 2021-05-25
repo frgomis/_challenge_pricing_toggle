@@ -1,11 +1,19 @@
 "use strict"
 // LES VARIABLES 
+let annual = document.querySelector(".annually");
+let eachMonth = document.querySelector(".monthly");
+let year = document.querySelector(".perYear");
+let month = document.querySelector(".perMonth");
 let btn = document.querySelector("button");
-let label = document.querySelector("label");
-let prices = document.querySelectorAll(".price");
 
-console.log(prices);
-label.addEventListener('click', )
+annual.addEventListener('click', change);
+eachMonth.addEventListener('click', change);
+function change (){
+    year.classList.toggle('toHide');
+    month.classList.toggle('active');
+}
+
+
 
 
 
