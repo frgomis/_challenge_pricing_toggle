@@ -147,18 +147,17 @@ header ul li{
 .basic li.price{
     font-size: 5rem;
 }
-li.perYear.toHide{
+.price.frequency.active{
   visibility: hidden;
   display:none;
 }
-li.perMonth{
+ .month.frequency{
   visibility: hidden;
   display:none;
 }
-li.perMonth.active{
+.month.frequency.active{
   visibility: visible;
   display:block;
-
 }
 
 

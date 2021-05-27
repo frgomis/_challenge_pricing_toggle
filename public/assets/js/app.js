@@ -1,18 +1,18 @@
 "use strict"
 // LES VARIABLES 
-let annual = document.querySelector(".annually");
-let eachMonth = document.querySelector(".monthly");
-let year = document.querySelector(".perYear");
-let month = document.querySelector(".perMonth");
+// let annual = document.querySelector(".annually");
+// let eachMonth = document.querySelector(".monthly");
+let headerBtn = document.querySelector(".slider");
+let freq = document.querySelectorAll(".frequency");
+let perYear = document.querySelector(".year");
+let perMonth = document.querySelector(".month");
+// --------------------------------------------------
 let btn = document.querySelector("button");
 
-annual.addEventListener('click', change);
-eachMonth.addEventListener('click', change);
-function change (){
-    year.classList.toggle('toHide');
-    month.classList.toggle('active');
-}
-
+headerBtn.addEventListener('click', function() {
+        perYear.classList.toggle('active');
+        perMonth.classList.toggle('active');
+})
 
 
 
