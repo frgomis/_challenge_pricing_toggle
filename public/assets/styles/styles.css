@@ -94,7 +94,7 @@ header ul li{
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(236deg, #a3a8f0, #696fdd);
+    background: linear-gradient(236deg, #696fdd, #a3a8f0);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -110,7 +110,7 @@ header ul li{
     transition: .4s;
   }
   input:checked + .slider {
-    background: linear-gradient(236deg, #a3a8f0, #696fdd);
+    background: linear-gradient(236deg, #696fdd, #a3a8f0);
   }
   input:focus + .slider {
     box-shadow: 0 0 1px #696fdd;
@@ -129,22 +129,22 @@ header ul li{
   }
 
 /*--- ul --- */
-.basic li{
+.base li{
     /* border: var(--borderHelp); */
     color: var(--GrayishBlue);
     padding: 5% 0;
     text-align: center;
     margin: 0 10%;
 }
-.basic li:not(:first-child){
+.base li:not(:first-child){
     border-bottom: rgb(179, 181, 198) solid 0.18rem;
     margin: 0 10%;
 }
-.basic li:first-child{
+.base li:first-child{
     padding-top:5%;
     font-size: 2rem;
 }
-.basic li.price{
+.base li.price{
     font-size: 5rem;
 }
 .price.frequency.active{
@@ -160,10 +160,10 @@ header ul li{
   display:block;
 }
 
-
 /* --- button --- */
 .card button{
-    background: linear-gradient(236deg, #a3a8f0, #696fdd);
+  background: linear-gradient(236deg, #696fdd, #a3a8f0);
+
     border-radius: 5px;
     border: none;
     color: #ffff;
@@ -175,8 +175,9 @@ header ul li{
 }
 .card button.active{
   background: none;
-  border: rgb(179, 181, 198) solid 0.18rem;
+  border: rgb(179, 181, 198) inset 0.14rem;
   color:  #696fdd;
+  font-weight: bold;
 }
 
 
