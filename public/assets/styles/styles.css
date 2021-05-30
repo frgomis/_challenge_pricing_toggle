@@ -74,6 +74,8 @@ header ul li{
     flex-direction: column;
     justify-content: center;
 }
+
+
 /* ---toggle.button--- */
 .switch {
     position: relative;
@@ -136,6 +138,10 @@ header ul li{
     text-align: center;
     margin: 0 10%;
 }
+ .base ul.base:nth-child(2){
+  border: var(--borderHelp);
+  
+}
 .base li:not(:first-child){
     border-bottom: rgb(179, 181, 198) solid 0.18rem;
     margin: 0 10%;
@@ -164,7 +170,13 @@ header ul li{
   visibility: hidden;
   display: none;
 }
-
+/* card pros */
+.card.pros{
+  background: var(--LinearGradient);
+}
+.card.pros button{
+  background: var(--VeryLightGrayishBlue);
+}
 
 /* --- button --- */
 .card button{
@@ -179,12 +191,20 @@ header ul li{
     margin: 10%;
     padding: 5%;
 }
+.card button:nth-child(2){
+  color: #696fdd;
+  border: #fff 1px solid;
+}
 .card button.active{
   background: none;
   border: rgb(179, 181, 198) inset 0.14rem;
   color:  #696fdd;
   font-weight: bold;
 }
+/* .card button.active:nth-child(2){
+  border: #fff 1px solid;
+  color:#fff; 
+} */
 /* VERSION DESKTOP */
 @media screen and (min-width: 768px) {
   .container {

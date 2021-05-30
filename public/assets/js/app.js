@@ -2,8 +2,9 @@
 // LES VARIABLES 
 let headerBtn = document.querySelector(".slider");
 let freq = document.querySelectorAll(".price");
-let btnLearnMore = document.querySelectorAll("button");
-console.log(btnLearnMore);
+let btns = document.querySelectorAll("button");
+console.log(btns);
+
 //--------------------------------------------------
 // PRICE : Month vs Year
 headerBtn.addEventListener('click', ()=>{
@@ -13,9 +14,10 @@ headerBtn.addEventListener('click', ()=>{
 });
 //--------------------------------------------------
 //  BUTTON - LEARN MORE
-btnLearnMore.addEventListener('click', () => {
-    for(let i = 0; i < btnLearnMore.length; i++) {
-        btnLearnMore[i].classList.toggle('active');
-    }
+btns.forEach((elements) =>{
+    elements.addEventListener('click', () => {
+        for(let j = 0; j < btns.length; j++) {
+            btns[j].classList.toggle('active');
+        }
+    });
 });
-
