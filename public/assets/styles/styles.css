@@ -11,8 +11,9 @@ html{
 body{
     font-size: 1.5rem;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    color:hsl(232, 13%, 33%);
+    /* color:var(--DarkGrayishBlue); */
     font-weight: bold;
+   
 }
 a{
     text-decoration: none;
@@ -29,12 +30,15 @@ li{
     --violet: rgb(128, 0, 128);
     --LinearGradient: linear-gradient(236deg, #696fdd, #a3a8f0);
 }
-.container{
-    background-color: var(--VeryLightGrayishBlue);
-    min-width: 375px;
-    max-width: 576px;
-    margin: 0 auto;
+.container {
+  background-color: var(--VeryLightGrayishBlue);
+  min-width: 375px;
+  max-width: 576px;
+  margin: 0 auto;
+  background-image: url('../images/bg-top.svg');
+  background-repeat: no-repeat;
 }
+
 /* xxx HEADER xxx */
 header h1{
     color:var(--GrayishBlue);
@@ -73,6 +77,9 @@ header ul li{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.card.basis{
+  margin-top:0;
 }
 
 
@@ -131,17 +138,18 @@ header ul li{
   }
 
 /*--- ul --- */
+ul.base{
+  color: var(--DarkGrayishBlue);
+}
+ul.base:nth-child(2){
+  color: #fff !important;
+}
 .base li{
-    /* border: var(--borderHelp); */
-    color: var(--GrayishBlue);
     padding: 5% 0;
     text-align: center;
     margin: 0 10%;
 }
- .base ul.base:nth-child(2){
-  border: var(--borderHelp);
-  
-}
+
 .base li:not(:first-child){
     border-bottom: rgb(179, 181, 198) solid 0.18rem;
     margin: 0 10%;
@@ -184,27 +192,31 @@ header ul li{
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    color: #ffff;
+    /* color: #ffff; */
     letter-spacing: 0.23rem;
     font-weight: 600;
     text-transform: uppercase;
     margin: 10%;
     padding: 5%;
 }
-.card button:nth-child(2){
-  color: #696fdd;
+button{
   border: #fff 1px solid;
+  color: #fff;
 }
-.card button.active{
+.card button:hover{
   background: none;
   border: rgb(179, 181, 198) inset 0.14rem;
   color:  #696fdd;
   font-weight: bold;
 }
-/* .card button.active:nth-child(2){
-  border: #fff 1px solid;
-  color:#fff; 
-} */
+.pros button{
+  color:  #696fdd;
+}
+.pros button:hover{
+  background-color: var(--LinearGradient);
+  color: #fff;
+  border: 0.1em solid #fff;
+}
 /* VERSION DESKTOP */
 @media screen and (min-width: 768px) {
   .container {

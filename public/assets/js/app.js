@@ -12,12 +12,13 @@ headerBtn.addEventListener('click', ()=>{
         freq[i].classList.toggle('active');
      }
 });
+
 //--------------------------------------------------
 //  BUTTON - LEARN MORE
-btns.forEach((elements) =>{
-    elements.addEventListener('click', () => {
-        for(let j = 0; j < btns.length; j++) {
-            btns[j].classList.toggle('active');
-        }
-    });
-});
+// btns.forEach((elements) =>{
+//     elements.addEventListener('click', () => {
+//         for(let j = 0; j < btns.length; j++) {
+//             btns[j].classList.toggle('active');
+//         }
+//     });
+// });
